@@ -1,7 +1,9 @@
-comprimento = int(input("Digite o comprimento que você quer utilizar: "))
-altura = int(input("Digite a altura que você quer utilizar: "))
-for i in range(altura):
-    if i == 0 or i == altura -1:
-        print("+" + (comprimento - 2) * "-" + "+")
-    else:
-        print("|" + (comprimento - 2) * " " + "|")
+def desenha_linha(limite, preenchimento, largura):
+    print(limite + (preenchimento * (largura - 2)) + limite)
+
+colunas = 20
+linhas = 3
+desenha_linha("+", "-", colunas)
+for l in range(linhas):
+    desenha_linha("|", " ", colunas)
+desenha_linha("+", "-", colunas)
