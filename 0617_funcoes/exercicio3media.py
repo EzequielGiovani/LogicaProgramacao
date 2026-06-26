@@ -1,9 +1,9 @@
-def calcular_media(valores):
-    if len(valores == 0):
-        return 0
-    
-    return sum(valores) /   len(valores)
+def calcular_media(numeros):
+    if not numeros:
+        return 0.0
+    total = sum(numeros)
+    return float(total) / len(numeros)
 
-valores = [7, 8, 9, 10]
-
-print(calcular_media)
+exemplo = [7, 8, 9, 10]
+resultado = calcular_media(exemplo)
+print(resultado)
