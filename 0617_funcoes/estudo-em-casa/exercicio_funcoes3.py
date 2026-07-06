@@ -1,3 +1,5 @@
+#NÚMERO PAR OU IMPAR
+
 numero = float(input(f"DIgite o numero: "))
 
 def par_ou_impar(valor):
