@@ -1,3 +1,5 @@
+#CALCULAR MÉDIA
+
 #sem usar listas
 
 """ nota1 = int(input("Digite a primeira nota: "))
