@@ -1,3 +1,5 @@
+#MAIOR DE IDADE OU NÃO
+
 idade = int(input(f"Digite sua idade: "))
 
 def maior_ou_menor_idade():
