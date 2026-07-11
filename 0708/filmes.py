@@ -23,8 +23,8 @@ def contar_filmes():
 
 def info_por_titulo():
     with open("filmes.txt", "r", encoding="utf-8") as f:
-        titulo = input("Digite o título do filme: ")
         linhas = f.readlines()
+        titulo = input("Digite o título do filme: ")
         if titulo == "O Poderoso Chefão":
             linhas_selecionadas = linhas[0:5]
             for linha in linhas_selecionadas:
@@ -33,20 +33,49 @@ def info_por_titulo():
             linhas_selecionadas = linhas[6:11]
             for linha in linhas_selecionadas:
                 print(linha)
-        else:
+        elif titulo == "Uma Odisseia no espaço":
             linhas_selecionadas = linhas[12:17]
             for linha in linhas_selecionadas:
                 print(linha)
+        else:
+            print("Título inválido!")
 
 
 def filmes_por_diretor():
-    print("Filmes por diretor")
+    with open("filmes.txt", "r", encoding="utf-8") as f:
+        linhas = f.readlines()
+        diretor = input("Digite o nome do diretor do filme: ")
+        if diretor == "Francis Coppola":
+            print(linhas[0])
+        elif diretor == "Christopher Nolan": 
+            print(linhas[6])
+        elif diretor == "Stanley Kubrick":
+            print(linhas[12])
+        else:
+            print("Diretor não encontrado!")
+        
 
 def filmes_por_genero():
-    print("Filmes por genêro")
+    with open("filmes.txt", "r", encoding="utf-8") as f:
+        linhas = f.readlines()
+        genero = input("Digite o genêro de filme que você quer assistir: ")
+        if genero == "Crime" or genero == "Drama":
+            print(linhas[0])
+        elif genero == "Ficção científica":
+            print(linhas[6])
+            print(linhas[12])
+        elif genero == "Aventura":
+            print(linhas[6])
+        else:
+            print("Nenhum filme desse genêro foi encontrado!")
+
 
 def media_duracao():
-    print("Media de duração")
+    with open("filmes.txt", "r", encoding="utf-8") as f:
+        linhas = f.readlines()
+        duracao = int(input("Digite a duração média do filme que deseja assistir: "))
+        
+
     
 
 while True:
