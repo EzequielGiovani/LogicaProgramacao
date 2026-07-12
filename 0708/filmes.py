@@ -73,10 +73,16 @@ def filmes_por_genero():
 def media_duracao():
     with open("filmes.txt", "r", encoding="utf-8") as f:
         linhas = f.readlines()
-        duracao = int(input("Digite a duração média do filme que deseja assistir: "))
-        
+        duracao = input(f"Digite a duração do filme que deseja assistir: ")
+        if duracao == "175 minutos":
+            print(linhas[0])
+        elif duracao == "169 minutos":
+            print(linhas[6])    
+        elif duracao == "142 minutos":
+            print(linhas[12])
+        else:
+            print("Nenhum filme com essa duração encontrado!")   
 
-    
 
 while True:
     menu()
@@ -93,7 +99,7 @@ while True:
     elif opcao == "4":
         filmes_por_genero()
     elif opcao == "5":
-        media_de_duracao()
+        media_duracao()
     elif opcao == "6":
         print("Saindo...")
         break
