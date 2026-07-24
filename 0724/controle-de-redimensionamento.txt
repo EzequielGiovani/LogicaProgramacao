@@ -1,0 +1,10 @@
+Bloquear Redimensionamento
+    root.resizable(False, False)
+
+impede que o usuario altere largura e altura da janela
+
+
+PERMITIR APENAS UMA DIREÇÃO
+    root.resizable(True, Flase)
+
+    permite redimensionar apenas a largura, mantendo a altura fixa
