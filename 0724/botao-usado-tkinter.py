@@ -13,7 +13,7 @@ def button_command():
 botao = tk.Button(
     root,
     text="Clique aqui",
-    command=button_command()
+    command=button_command
 )
 
 botao.pack()
