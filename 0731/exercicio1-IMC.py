@@ -37,7 +37,6 @@ def calcular_imc():
         classificacao = "Obeso"
 
     resultado.config(
-        janela,
         text=f"Seu IMC é: {imc:.2f} \nClassificao: {classificacao}"
     )
 
